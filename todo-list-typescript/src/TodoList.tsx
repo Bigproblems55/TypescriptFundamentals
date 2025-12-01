@@ -1,17 +1,17 @@
 //TodoList.tsx
 import React, { useState } from 'react';
 
-
+// Todo Type Definition
 type Todo = {
   id: number;
   task: string;
   completed: boolean;
 }
-
+// TodoList Component
 const TodoList: React.FC = () => {
   const [todos, setTodos] = useState<Todo[]>([]);
   const [newTask, setNewTask] = useState<string>('');
-
+// Function to add a new todo
   const addTodo = (): void => {
     if (newTask.trim() !== '') {
       const newTodo: Todo = {
@@ -19,12 +19,12 @@ const TodoList: React.FC = () => {
         task: newTask,
         completed: false,
       };
-
+// Update the todos state
       setTodos([...todos, newTodo]);
       setNewTask('');
     }
   };
-
+// Function to toggle todo completion
   const toggleTodo = (id: number): void => {
     setTodos((prevTodos) =>
       prevTodos.map((todo) =>
@@ -32,11 +32,11 @@ const TodoList: React.FC = () => {
       )
     );
   };
-
+// Function to delete a todo
   const deleteTodo = (id: number): void => {
     setTodos((prevTodos) => prevTodos.filter((todo) => todo.id !== id));
   };
-
+// JSX Rendering
   return (
     <div className='todo-list'>
       <h2 className='title'>Your Todo List</h2>      
