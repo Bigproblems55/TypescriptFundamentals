@@ -1,22 +1,21 @@
-Exercise 1: Age Calculator
-Objective: The objective of this exercise is to create a function that calculates a person's age based on their birth year and the current year.
+Exercise 2: Dynamic Task Rendering: A Proficient Exploration of TypeScript in React
+Objective:
 
-Problem Statement: You are tasked with creating a function that calculates a person's age. The function will take the person's birth year and the current year as inputs and return the person's age.
+The main goals of this coding exercise are to acquaint yourself with TypeScript within a React environment, engage in working with TypeScript types by defining a type named Task, practice initializing and manipulating an array of tasks within a React functional component, and enhance your proficiency in dynamically displaying task information on the screen using the map function.
 
 Instructions:
 
-Create a new React app using the command npx create-vite@latest age-calculator --template react-ts and make sure to cd into the directory, npm install everything, and run the server.
-In the App.tsx declare three new variables: myName, birthYear and currentYear
-Assign the correct data types to the given variables
-Declare a function named calculateAge that takes two parameters: birthYear (number) and currentYear (number).
-Inside the function, subtract the birthYear from the currentYear to calculate the person's age.
-Return the calculated age.
-Render the variables to the screen including the calculateAge funtion
-Hints:
+Create a new React app using the command npx create-vite@latest task-renderer --template react-ts
+Inside the App.tsx file, declare a type named Task with properties title (string), description (string), and completed (boolean).
+Initialize an empty array named tasks.
+Create three tasks (task1, task2, and task3) with the specified properties (title, description, completed) and push them into the tasks array.
+Utilize the map function to dynamically render the task information on the screen. Display the task title, description, and whether it is completed or incomplete.
+Hints
 
-You can use the subtraction operator - to calculate the age.
-Ensure that the currentYear is greater than or equal to the birthYear.
-You can define the function that calculates the age outside the App component.
+Make use of TypeScript type annotations when declaring the Task type and assigning values to tasks.
+Utilize the push method to add tasks to the tasks array.
+Use the map function to iterate over the tasks array and render each task dynamically.
+Pay attention to the conditional rendering (task.completed ? "Completed" : "Incomplete") to display completion status.
 
 # React + TypeScript + Vite
 
