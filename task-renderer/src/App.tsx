@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Task from './components/Task.tsx'
+import Task from './components/Task'
 import './App.css'
 
 function App() {
