@@ -1,6 +1,5 @@
 import React from 'react';
 import type { ProfileProps } from '../models/Person.model';
-
 const Personcomponents: React.FC<ProfileProps> = (props ) =>{
     return (
         <div>
@@ -12,5 +11,4 @@ const Personcomponents: React.FC<ProfileProps> = (props ) =>{
         </div>
     )
 }
-
 export default Personcomponents;

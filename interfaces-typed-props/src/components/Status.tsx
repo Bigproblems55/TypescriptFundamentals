@@ -1,9 +1,9 @@
-export type StatusProp = {
-    status: 'loading' | 'success' | 'error'
-}
-const Status: React.FC = () =>{
+type StatusProps = {
+  status: 'loading' | 'success' | 'error';
+};
 
-    const statusInput: StatusProp = {
+export default function Status({ status }: StatusProps) {
+      const statusInput: StatusProp = {
         status: 'loading'
     }
     let message ;
@@ -22,4 +22,6 @@ const Status: React.FC = () =>{
     )
 }
 
-export default Status;
+
+
+ 
