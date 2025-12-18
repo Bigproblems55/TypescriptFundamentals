@@ -3,7 +3,7 @@ type StatusProps = {
 };
 
 export default function Status({ status }: StatusProps) {
-      const statusInput: StatusProp = {
+      const statusInput: StatusProps = {
         status: 'loading'
     }
     let message ;
